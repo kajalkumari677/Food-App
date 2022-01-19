@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+         #cart{
+          width:10%;
+          margin: auto;
+          margin-right: 30px;
+          height:50%;
+         display:flex;
+          border: 1px solid green;
+          border-radius: 5px;
+      }
+      #imgDiv>img{
+          padding:5px;
+          width:80%;
+          height:70%;
+      }
+      #imgDiv~div{
+         text-align: center;
+         padding:13px;
+
+      }
+       #imgDiv~div>a{
+           text-decoration: none;
+           color:rgb(11, 51, 11)
+       }
+     #cart:hover{
+         background-color: rgb(168, 241, 168);
+          color:rgb(11, 51, 11)
+     }
+                   #detail>#card{
+                  /* border:1px solid green */
+              }
+              #detail>#card>label{
+                font-size: 18px;
+              }
+                 #detail>#card>input{
+                    width:200px;
+                    height:20px; 
+                 }
+             
+            #state{
+                width:10px;
+            }
+
+
+
+
+       #outer_box{
+                  width:1360px;
+                  /* border:1px solid red;; */
+                  display:flex;
+                  margin-bottom: 100px;;
+              }
+
+        #product{
+        margin:-1% 5% 5% 5%;
+        /* padding:20px; */
+        /* border:1px solid violet; */
+        height:800px;
+        width:600px;
+        display:grid;
+        grid-template-columns:20%;
+        grid-template-rows: 30%;;
+        grid-gap:5%;
+        justify-content: center;
+         /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+        padding:10px;
+       
+
+    
+    }
+    #express{
+        /* border:1px solid red; */
+        width:520px;;
+        height:200px;
+        padding:10px;
+        margin-left: -200px;;
+         /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+         border-radius: 10px;;
+
+    }
+    #detail{
+         /* border:1px solid red; */
+          height:800px;
+         width:600px; 
+         background-color: rgba(248, 248, 246, 0.801); 
+         /* box-shadow: rgba(174, 174, 177, 0.15) 0px 48px 100px 0px; */
+        padding:10px;
+        border-radius: 10px;;
+      
+    }
+    #heading{
+        margin-left: 70px;
+        width: 44%;
+       
+        text-align: center;
+    }
+    #form_div{
+        margin-top: 10px;;
+         /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+        padding:10px;
+        width:520px;
+        margin-left: -200px;;
+        border-radius: 10px;;
+    }
+
+    img{
+        width:88%;
+        height:80%;
+        /* margin:40px; */
+        padding:10px;
+        /* border:1px solid blue; */
+        
+    }
+    #img_div{
+        height:130px;
+        width:130px;
+        background-color: lightblue;
+        /* margin-left: -200px;; */
+        /* border:1px solid green; */
+        /* margin-top:100px ; */
+        /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+        margin-top: 100px;;
+        /* padding:10px; */
+        border-radius: 10px;;
+    
+    }
+    #img_div:hover{
+        border:1px solid rgb(150, 147, 147)
+    }
+    #detail_div{
+        border-radius: 10px;;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        /* margin-left: -200px;; */
+        /* margin-top:250px;; */
+        border:1px solid lightgray;
+        width:430px;
+        height:150px;
+        background-color: whitesmoke;
+        padding:10px;
+        margin-top: 10px;;
+    }
+    #heading{
+      /* border:1px solid whitesmoke; */
+    
+    }
+    
+    #prd_detail{
+      /* border:1px solid yellow; */
+      margin:10px;
+
+
+
+    }
+    
+    #form_div>input{
+        width:350px;
+        height:15px;
+    }
+
+     #price:hover{
+         /* border:1px solid red; */
+         color:gray;
+         font-weight: bold;
+     }
+     #name{
+         color:indigo;
+          font-weight: bold;
+     }
+     #crt_btn{
+         width:30%;
+         height:30px;
+         background-color: rgb(150, 196, 196);
+         border-radius: 10px;
+     }
+     #crt_btn:hover{
+         background-color: rgb(55, 114, 114);
+           color: white;
+          
+     }
+    </style>
+</head>
+<body>
+           <h3 id="heading">Items In Cart</h3>
+        <div id="outer_box">
+        
+         <div id="product">
+             <div id="express">
+                <h2 id="">Express Checkout</h2>
+                <p>Now offering Amazon Pay! Save time by checking out using your saved address and payment method from your Amazon account.</p>
+                <div>amazon pay >></div>
+                <div>USE YOUR AMAZON ACCOUNT</div>
+                <br>
+               
+                 </div>
+                     
+                  <div id="form_div">
+                      <h3>1.Order Address</h3>
+                      <br>
+                      <label>Add Delivery Loaction</label><br><br>
+                    
+
+                      <label>Country</label><br>
+                      <input/><br><br>
+
+                      <label>Full Name</label><br>
+                      <input/><br>
+
+                      <label>Address Line 1</label><br>
+                      <input/><br><br>
+
+                      <label>Address Line 2</label><br>
+                      <input><br><br>
+
+                      <label>Phone number</label><br>
+                      <input><br><br>
+
+                      <label>State</label><br>
+                      <input><br><br>
+
+                      <label>city</label><br>
+                      <input><br><br>
+
+
+
+
+
+                  </div>
+           
+         </div>
+
+         <div id="detail">
+             <h1>Card Detail</h1>
+          <div id="card">
+           <label>Card Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input/><br>
+          <br>
+         <label>Card Number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input/><br><br>
+
+          <label>Expiry date</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input>
+          <br><br>
+
+          <label>CVV</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input>
+
+          </div>
+
+         </div>
+
+    </div>
+</body>
+</html>
+<script>
+    let prod = document.getElementById("detail");
+//.get the data from local storage
+
+let cart=JSON.parse(localStorage.getItem("cart"))
+console.log("cart",cart);
+
+function showProducts(){
+
+cart.forEach(function(product){
+
+  //  console.log(product.name);
+
+
+
+// img_div.style.height="400px";
+// img_div.style.width="250px";
+// img_div.style.backgroundColor="rgb(157, 179, 207)"
+
+// img_div.style.border="1px solid grey";
+let img_div = document.createElement("div");
+
+
+img_div.setAttribute("id","img_div")
+
+let img = document.createElement("img");
+
+img.src=product.img;
+
+let product_price = document.createElement("p");
+product_price.setAttribute("id","price");
+product_price.textContent="Total Price"+"-"+product.price;
+
+
+
+let product_name = document.createElement("p");
+product_name.setAttribute("id","name")
+product_name.textContent= product.name;
+img_div.append(img);
+
+var detail_div=document.createElement("div")
+detail_div.setAttribute("id","detail_div")
+detail_div.append(product_name,product_price)
+
+
+let addtocart_btn=document.createElement("button");
+addtocart_btn.setAttribute("id","crt_btn")
+ addtocart_btn.innerText="Confirm Payment";
+
+addtocart_btn.onclick=function(){
+    // addtocart(product);
+    alert("payment successful")
+};
+
+detail_div.append(product_name,product_price,addtocart_btn);//html element
+
+prod.append(img_div,detail_div)
+});
+}
+showProducts();
+
+</script>
